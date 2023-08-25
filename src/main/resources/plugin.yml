@@ -1,0 +1,4 @@
+name: NebulaMC
+version: '${project.version}'
+main: dev.kippenboutske.nebulamc.main
+api-version: '1.20'
