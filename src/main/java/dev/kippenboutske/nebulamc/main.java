@@ -31,6 +31,8 @@ public final class main extends JavaPlugin {
         Score playerName = objective.getScore(ChatColor.AQUA + "Naam:" + player.getDisplayName());
         playerName.setScore(9);
 
+        player.setScoreboard(scoreboard);
+
 
 
     }
