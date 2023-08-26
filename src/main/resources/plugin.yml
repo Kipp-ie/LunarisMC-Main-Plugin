@@ -2,3 +2,16 @@ name: NebulaMC
 version: '${project.version}'
 main: dev.kippenboutske.nebulamc.main
 api-version: '1.20'
+commands:
+  heal:
+    description: Heal jezelf
+    aliases: [h]
+    permission: nebulaplugin.heal
+    permission-message: Je kunt dit command niet uitvoeren, je mist permissies.
+    usage: /heal
+  broadcast:
+    description: Broadcast a message
+    aliases: [ bc ]
+    permission: nebulaplugin.broadcast
+    permission-message: Missing permissions!
+    usage: /broadcast <text>
