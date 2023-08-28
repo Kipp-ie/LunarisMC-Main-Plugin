@@ -21,6 +21,8 @@ public final class main extends JavaPlugin {
         getCommand("broadcast").setExecutor(new Broadcast());
         Bukkit.getPluginManager().registerEvents(new joinListener(), this);
         Bukkit.getPluginManager().registerEvents(new TabListListener(), this);
+        getCommand("lock").setExecutor(new Lock());
+        getCommand("unlock").setExecutor(new Unlock());
 
     }
 
