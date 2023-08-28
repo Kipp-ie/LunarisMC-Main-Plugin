@@ -13,6 +13,7 @@ public class Unlock implements CommandExecutor {
         Player player = Bukkit.getPlayer(args[0]);
         if(player != null)
         {
+            sender.sendMessage(args + "has been unlocked!");
             player.removePotionEffect(PotionEffectType.BLINDNESS);
             player.removePotionEffect(PotionEffectType.SLOW);
 

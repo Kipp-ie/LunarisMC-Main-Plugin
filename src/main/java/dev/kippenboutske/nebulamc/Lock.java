@@ -14,6 +14,7 @@ public class Lock implements CommandExecutor {
         Player player = Bukkit.getPlayer(args[0]);
         if(player != null)
         {
+            sender.sendMessage(args + "has been locked, don't forget to unlock!");
             player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, Integer.MAX_VALUE, 1000000, true, false));
             player.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, Integer.MAX_VALUE, 1, true, false));
             player.sendTitle("You have been locked", "Don't logout!");
