@@ -12,7 +12,11 @@ public final class main extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        Bukkit.getLogger().info("NebulaPlugin has been loaded");
+        Bukkit.getLogger().info("_|      _|  _|_|_|_|  _|_|_|    _|    _|  _|          _|_|    _|      _|    _|_|_|        _|_|_|    _|_|    _|_|_|    _|_|_|_|  ");
+        Bukkit.getLogger().info("_|_|    _|  _|        _|    _|  _|    _|  _|        _|    _|  _|_|  _|_|  _|            _|        _|    _|  _|    _|  _|     ");
+        Bukkit.getLogger().info("_|  _|  _|  _|_|_|    _|_|_|    _|    _|  _|        _|_|_|_|  _|  _|  _|  _|            _|        _|    _|  _|_|_|    _|_|_|");
+        Bukkit.getLogger().info("_|    _|_|  _|        _|    _|  _|    _|  _|        _|    _|  _|      _|  _|            _|        _|    _|  _|    _|  _|      ");
+        Bukkit.getLogger().info("_|      _|  _|_|_|_|  _|_|_|      _|_|    _|_|_|_|  _|    _|  _|      _|    _|_|_|        _|_|_|    _|_|    _|    _|  _|_|_|_|  ");
         getCommand("heal").setExecutor(new HealCommand());
         getCommand("broadcast").setExecutor(new Broadcast());
         Bukkit.getPluginManager().registerEvents(new joinListener(), this);
