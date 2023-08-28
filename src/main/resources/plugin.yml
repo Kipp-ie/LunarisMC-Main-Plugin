@@ -8,7 +8,13 @@ commands:
     aliases: [l]
     permission: nebulaplugin.lock
     permission-message: This command is only for admins and mods
-    usage: /lock
+    usage: /lock [player]
+  unlock:
+    description: Unlock a player (Only use after lock!)
+    aliases: [ul]
+    permission: nebulaplugin.unlock
+    permission-message: Unlocking is only for admins!
+    usage: /unlock [player]
   heal:
     description: Heal jezelf
     aliases: [h]

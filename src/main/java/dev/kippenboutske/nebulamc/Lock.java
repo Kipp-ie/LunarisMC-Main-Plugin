@@ -16,7 +16,7 @@ public class Lock implements CommandExecutor {
         {
             player.addPotionEffect(new PotionEffect(PotionEffectType.SLOW, Integer.MAX_VALUE, 1000000, true, false));
             player.addPotionEffect(new PotionEffect(PotionEffectType.BLINDNESS, Integer.MAX_VALUE, 1, true, false));
-            player.sendTitle("You have been locked", "Staff will unlock you shortly");
+            player.sendTitle("You have been locked", "Don't logout!");
         }
         else
         {
