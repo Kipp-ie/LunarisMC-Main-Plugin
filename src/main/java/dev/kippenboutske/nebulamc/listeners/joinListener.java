@@ -16,7 +16,7 @@ public class joinListener implements Listener {
     public void onJoin(PlayerJoinEvent e){
 
         main.createScoreBoard(e.getPlayer());
-        e.getPlayer().sendTitle("BLABLABLA", "BLABLABLA");
+        e.getPlayer().sendTitle("[lang]title.welcome[/lang]", "BLABLABLA");
 
 
     }

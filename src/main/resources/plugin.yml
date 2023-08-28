@@ -3,6 +3,12 @@ version: '${project.version}'
 main: dev.kippenboutske.nebulamc.main
 api-version: '1.20'
 commands:
+  lock:
+    description: Lock a player to inspect
+    aliases: [l]
+    permission: nebulaplugin.lock
+    permission-message: This command is only for admins and mods
+    usage: /lock
   heal:
     description: Heal jezelf
     aliases: [h]

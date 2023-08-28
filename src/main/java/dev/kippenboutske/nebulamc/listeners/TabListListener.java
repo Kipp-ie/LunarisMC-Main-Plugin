@@ -12,8 +12,8 @@ public class TabListListener implements Listener {
 
         Player player = e.getPlayer();
 
-        player.setPlayerListHeader(ChatColor.RED + "WELKOM\n" + ChatColor.GREEN + player.getDisplayName() + "\n");
-        player.setPlayerListFooter(ChatColor.GOLD + "FOOTER");
+        player.setPlayerListHeader(ChatColor.WHITE + "\n" + "          œ          " + "\n\n\n" + ChatColor.DARK_PURPLE + "--------------");
+        player.setPlayerListFooter(ChatColor.LIGHT_PURPLE + "\n" + "Your ping: " + ChatColor.WHITE + "[lang]tablist.ping[/lang]" + "MS");
 
     }
 }
