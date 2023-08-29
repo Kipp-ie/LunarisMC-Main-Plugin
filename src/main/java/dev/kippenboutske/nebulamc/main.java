@@ -23,6 +23,7 @@ public final class main extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new TabListListener(), this);
         getCommand("lock").setExecutor(new Lock());
         getCommand("unlock").setExecutor(new Unlock());
+        getCommand("nrestart").setExecutor(new Nrestart());
 
     }
 

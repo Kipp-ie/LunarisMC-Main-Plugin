@@ -27,3 +27,9 @@ commands:
     permission: nebulaplugin.broadcast
     permission-message: Missing permissions!
     usage: /broadcast <text>
+
+  nrestart:
+    description: Restarts the survival server
+    aliases: [ nr ]
+    permission: nebulaplugin.nrestart
+    usage: /nrestart
