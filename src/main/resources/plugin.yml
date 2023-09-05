@@ -2,6 +2,7 @@ name: NebulaMC
 version: '${project.version}'
 main: dev.kippenboutske.nebulamc.main
 api-version: '1.20'
+depend: [PlaceholderAPI]
 commands:
   lock:
     description: Lock a player to inspect
@@ -27,6 +28,12 @@ commands:
     permission: nebulaplugin.broadcast
     permission-message: Missing permissions!
     usage: /broadcast <text>
+  nrestart:
+    description: restart the server
+    aliases: [ nr ]
+    permission: nebulaplugin.nrestart
+    permission-message: Missing permissions!
+    usage: /nrestart <text>
 
   nrestart:
     description: Restarts the survival server

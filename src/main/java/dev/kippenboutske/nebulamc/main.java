@@ -12,18 +12,26 @@ public final class main extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        Bukkit.getLogger().info("_|      _|  _|_|_|_|  _|_|_|    _|    _|  _|          _|_|    _|      _|    _|_|_|        _|_|_|    _|_|    _|_|_|    _|_|_|_|  ");
-        Bukkit.getLogger().info("_|_|    _|  _|        _|    _|  _|    _|  _|        _|    _|  _|_|  _|_|  _|            _|        _|    _|  _|    _|  _|     ");
-        Bukkit.getLogger().info("_|  _|  _|  _|_|_|    _|_|_|    _|    _|  _|        _|_|_|_|  _|  _|  _|  _|            _|        _|    _|  _|_|_|    _|_|_|");
-        Bukkit.getLogger().info("_|    _|_|  _|        _|    _|  _|    _|  _|        _|    _|  _|      _|  _|            _|        _|    _|  _|    _|  _|      ");
-        Bukkit.getLogger().info("_|      _|  _|_|_|_|  _|_|_|      _|_|    _|_|_|_|  _|    _|  _|      _|    _|_|_|        _|_|_|    _|_|    _|    _|  _|_|_|_|  ");
-        getCommand("heal").setExecutor(new HealCommand());
-        getCommand("broadcast").setExecutor(new Broadcast());
-        Bukkit.getPluginManager().registerEvents(new joinListener(), this);
-        Bukkit.getPluginManager().registerEvents(new TabListListener(), this);
-        getCommand("lock").setExecutor(new Lock());
-        getCommand("unlock").setExecutor(new Unlock());
-        getCommand("nrestart").setExecutor(new Nrestart());
+        if (Bukkit.getPluginManager().getPlugin("PlaceholderAPI") != null) {
+            Bukkit.getLogger().info("_|      _|  _|_|_|_|  _|_|_|    _|    _|  _|          _|_|    _|      _|    _|_|_|        _|_|_|    _|_|    _|_|_|    _|_|_|_|  ");
+            Bukkit.getLogger().info("_|_|    _|  _|        _|    _|  _|    _|  _|        _|    _|  _|_|  _|_|  _|            _|        _|    _|  _|    _|  _|     ");
+            Bukkit.getLogger().info("_|  _|  _|  _|_|_|    _|_|_|    _|    _|  _|        _|_|_|_|  _|  _|  _|  _|            _|        _|    _|  _|_|_|    _|_|_|");
+            Bukkit.getLogger().info("_|    _|_|  _|        _|    _|  _|    _|  _|        _|    _|  _|      _|  _|            _|        _|    _|  _|    _|  _|      ");
+            Bukkit.getLogger().info("_|      _|  _|_|_|_|  _|_|_|      _|_|    _|_|_|_|  _|    _|  _|      _|    _|_|_|        _|_|_|    _|_|    _|    _|  _|_|_|_|  ");
+            getCommand("heal").setExecutor(new HealCommand());
+            getCommand("broadcast").setExecutor(new Broadcast());
+            Bukkit.getPluginManager().registerEvents(new joinListener(), this);
+            Bukkit.getPluginManager().registerEvents(new TabListListener(), this);
+            getCommand("lock").setExecutor(new Lock());
+            getCommand("unlock").setExecutor(new Unlock());
+            getCommand("nrestart").setExecutor(new Nrestart());
+
+        } else {
+            Bukkit.getLogger().warning("Could not find PlaceholderAPI! This plugin is required.");
+            Bukkit.getLogger().warning("Disabling plugin now...");
+            Bukkit.getPluginManager().disablePlugin(this);
+        }
+
 
     }
 
