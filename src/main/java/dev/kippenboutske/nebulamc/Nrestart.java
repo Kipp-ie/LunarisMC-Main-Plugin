@@ -20,8 +20,10 @@ public class Nrestart implements CommandExecutor {
         }
         Bukkit.broadcastMessage("TEST MESSAGE AFTER 5");
 
+        Bukkit.spigot().restart();
 
 
-        return false;
+
+        return true;
     }
 }
