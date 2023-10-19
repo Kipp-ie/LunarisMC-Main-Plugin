@@ -1,17 +1,12 @@
-package dev.kippenboutske.nebulamc.listeners;
+package dev.kippenboutske.lunarismc.listeners;
 
-import dev.kippenboutske.nebulamc.main;
-import jdk.tools.jmod.Main;
-import org.bukkit.Bukkit;
+import dev.kippenboutske.lunarismc.main;
 import org.bukkit.ChatColor;
 import org.bukkit.Sound;
-import org.bukkit.entity.ExperienceOrb;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
-
-import java.util.UUID;
 
 public class joinListener implements Listener {
 

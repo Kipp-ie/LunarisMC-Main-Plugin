@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/NebulaMC.iml" filepath="$PROJECT_DIR$/NebulaMC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LunarisMC.iml" filepath="$PROJECT_DIR$/LunarisMC.iml" />
     </modules>
   </component>
 </project>
