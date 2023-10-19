@@ -18,7 +18,11 @@ public class Broadcast implements CommandExecutor {
             if (message != "") message += " ";
             message += part;
         }
-        Bukkit.broadcastMessage(translateAlternateColorCodes('§', "§x§B§E§0§0§F§FN§x§A§3§0§0§F§Fe§x§8§9§0§0§F§Fb§x§6§E§0§0§F§Fu§x§5§3§0§0§F§Fl§x§3§8§0§0§F§Fa§x§1§E§0§0§F§FM§x§0§3§0§0§F§FC") + ChatColor.RESET + " " + translateAlternateColorCodes('&', message));
+        Bukkit.broadcastMessage(ChatColor.BLUE + "----------" + translateAlternateColorCodes('§', "§x§0§0§F§F§E§0&lL§x§0§2§D§F§E§4&lu§x§0§4§B§F§E§8&ln§x§0§6§9§F§E§C&la§x§0§8§8§0§F§0&lr§x§0§A§6§0§F§3&li§x§0§C§4§0§F§7&ls§x§0§E§2§0§F§B&lM§x§1§0§0§0§F§F&lC") + ChatColor.BLUE + "----------");
+        Bukkit.broadcastMessage("");
+        Bukkit.broadcastMessage(message);
+        Bukkit.broadcastMessage("");
+        Bukkit.broadcastMessage( ChatColor.BLUE + "-----------------------------");
         return true;
     }
 
