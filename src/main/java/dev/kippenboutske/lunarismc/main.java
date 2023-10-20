@@ -36,7 +36,7 @@ public final class main extends JavaPlugin {
         ScoreboardManager scoreboardManager = Bukkit.getScoreboardManager();
         Scoreboard scoreboard = scoreboardManager.getNewScoreboard();
 
-        Objective objective = scoreboard.registerNewObjective("nebulamcboard", "dummy");
+        Objective objective = scoreboard.registerNewObjective("lunarismcboard", "dummy");
         objective.setDisplaySlot(DisplaySlot.SIDEBAR);
         objective.setDisplayName(ChatColor.DARK_PURPLE + "TEST BORD");
 
@@ -50,10 +50,6 @@ public final class main extends JavaPlugin {
 
 
     }
-    public static void createTabList(Player player){
-
-    }
-
 
 
     @Override
