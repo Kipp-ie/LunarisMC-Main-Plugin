@@ -1,4 +1,4 @@
-name: NebulaMC
+name: LunarisMC
 version: '${project.version}'
 main: dev.kippenboutske.lunarismc.main
 api-version: '1.20'
